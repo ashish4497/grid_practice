@@ -1,0 +1,15 @@
+
+
+.container {
+  border: 10px solid;
+  display: grid;
+  grid-gap: 20px;
+grid-template-columns: repeat(auto-fill, 150px);
+}
+
+.item {
+  background-color: royalblue; 
+}
+.item5 {
+  grid-column-end: -2;
+}

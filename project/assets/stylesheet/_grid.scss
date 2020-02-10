@@ -1,0 +1,15 @@
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.flex {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.col-1-2 {
+  display: grid;
+  grid-template-columns:repeat(2, 1fr);
+}
