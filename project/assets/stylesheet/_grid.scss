@@ -3,13 +3,31 @@
   margin: 0 auto;
   padding: 0 30px;
 }
+
 .flex {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
+
+.flex-2 {
+  display: flex;
+  align-items: flex-start;
+}
+
 .col-1-2 {
   display: grid;
-  grid-template-columns:repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
+
+.col-1-2-3 {
+  display: grid;
+  grid-template-columns: 1fr 350px 320px;
+}
+
+.col-1-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
