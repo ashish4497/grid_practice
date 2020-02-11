@@ -25,6 +25,8 @@
     margin-left: 20px;
     font-size: 1rem;
     text-transform: uppercase;
+    color: #393939;
+    font-weight: 700;
   }
 }
 
@@ -119,16 +121,13 @@
     }
 
     progress {
-
+      width: 100%;
       height: 6px;
     }
   }
 }
 
-.user-image {
-  width: 100%;
-  height: 100%;
-}
+
 
 // section-three 
 .col-3-row-3 {
@@ -179,6 +178,10 @@
   text-transform: capitalize;
   font-size: 2rem;
 
+  .col-4-r-1 {
+    font-size: 0;
+  }
+
   .col-4-r-2 {
     background-color: #fa673d;
   }
@@ -189,6 +192,7 @@
 
   strong {
     color: black;
+    font-size: 1.5rem;
   }
 
   p {
@@ -209,9 +213,11 @@
 .contact-section {
   background-color: #fa673d;
   color: white;
-.address-sec {
-  background-color: #161616;
-}
+
+  .address-sec {
+    background-color: #161616;
+  }
+
   .send-btn {
     background-color: white;
     color: #a59e9b;
@@ -230,38 +236,86 @@
   }
 }
 
-input,
-textarea {
-  border: 0;
-  background-color: transparent;
-  width: 100%;
-  border-bottom: 1px solid #a59e9b;
-  padding: 20px 0;
-}
-
-::placeholder {
-  text-transform: capitalize;
-  color: white;
-}
 
 // map-section 
-.map-sec{
+.map-sec {
   background-color: #fa673d;
 }
 
 // footer 
 .footer-sec {
   padding: 60px 0;
+
   .fab {
     font-size: 1.2rem;
     color: #161616;
   }
 }
+
 .center {
   text-align: center;
+
   .social-link li {
     text-align: center;
-    display:inline-block;
+    display: inline-block;
     padding: 40px 30px;
+  }
+}
+
+// Media Queries
+@media all and (max-width:768px) {
+  html {
+    font-size: 12px;
+  }
+
+  .left-sec {
+    font-size: 0;
+  }
+
+  .top-header {
+    // display: none;
+    background-color: white;
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .header-bar {
+    display: none;
+  }
+
+  .image-sec {
+    font-size: 0;
+  }
+
+  .col-4-r-1 {
+    font-size: 0;
+  }
+
+  .col-2-r-2 {
+    font-size: 0;
+  }
+
+  .col-2-r-3 {
+
+    // text-align: center;
+    .icon {
+      margin-right: 1.3rem;
+    }
+
+    label {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+
+  }
+
+  .map {
+    width: 100%;
+    height: 400px;
   }
 }
