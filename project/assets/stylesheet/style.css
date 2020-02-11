@@ -208,7 +208,7 @@ textarea {
       grid-template-columns: repeat(2, 1fr);
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 1024px) {
   .col-1-2 {
     width: 100%;
     -ms-grid-columns: auto;
@@ -223,7 +223,7 @@ textarea {
       grid-template-columns: 1fr 336px 336px;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 1024px) {
   .col-1-2-3 {
     width: 100%;
     -ms-grid-columns: auto;
@@ -238,7 +238,7 @@ textarea {
       grid-template-columns: repeat(4, 1fr);
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 1024px) {
   .col-1-4 {
     width: 100%;
     -ms-grid-columns: auto;
@@ -269,6 +269,10 @@ textarea {
   text-transform: uppercase;
   color: #393939;
   font-weight: 700;
+}
+
+.top-header .nav-links a:hover {
+  color: #fa673d;
 }
 
 .top-header .ham-menu {
@@ -493,7 +497,7 @@ textarea {
   padding: 40px 30px;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 1024px) {
   html {
     font-size: 12px;
   }

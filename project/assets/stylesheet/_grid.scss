@@ -20,7 +20,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
-  @media all and (max-width: 768px) {
+  @media all and (max-width: 1024px) {
     width: 100%;
     grid-template-columns: auto;
   }
@@ -30,7 +30,7 @@
   display: grid;
   grid-template-columns: 1fr 336px 336px;
 
-  @media all and (max-width:768px) {
+  @media all and (max-width:1024px) {
     width: 100%;
     grid-template-columns: auto;
   }
@@ -40,7 +40,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 
-  @media all and (max-width: 768px) {
+  @media all and (max-width: 1024px) {
     width: 100%;
     grid-template-columns: auto;
   }

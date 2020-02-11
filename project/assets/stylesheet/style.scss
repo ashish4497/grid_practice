@@ -27,6 +27,9 @@
     text-transform: uppercase;
     color: #393939;
     font-weight: 700;
+    &:hover {
+      color: #fa673d;
+    }
   }
 
   .ham-menu {
@@ -271,7 +274,7 @@
 }
 
 // Media Queries
-@media all and (max-width:768px) {
+@media all and (max-width:1024px) {
   html {
     font-size: 12px;
   }
