@@ -263,12 +263,20 @@ textarea {
   text-transform: lowercase;
 }
 
-.top-header .nab-links a {
+.top-header .nav-links a {
   margin-left: 20px;
   font-size: 1rem;
   text-transform: uppercase;
   color: #393939;
   font-weight: 700;
+}
+
+.top-header .ham-menu {
+  display: none;
+}
+
+.top-header #toggle {
+  display: none;
 }
 
 .hero-section {
@@ -494,12 +502,41 @@ textarea {
   }
   .top-header {
     background-color: white;
+    position: static;
   }
   .top-header h1 {
     font-size: 2rem;
   }
-  .header-bar {
+  .top-header .nav-links {
     display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 100px;
+  }
+  .top-header .nav-links li {
+    margin: 32px 0;
+  }
+  .top-header .nav-links li a {
+    color: white;
+    font-size: 2rem;
+  }
+  .top-header .ham-menu {
+    color: #fa673d;
+    font-size: 32px;
+    display: inline-block;
+    z-index: 999;
+    position: relative;
+  }
+  .top-header .logo {
+    z-index: 999;
+  }
+  .top-header #toggle:checked ~ .nav-links {
+    display: inline-block;
   }
   .image-sec {
     font-size: 0;
